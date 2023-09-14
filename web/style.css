@@ -1,0 +1,83 @@
+.contenedor{
+    display: grid;
+    gap: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    grid-template-rows: 1fr  1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'header	header	header	header'
+        'main	main	main	main'
+        'main	main	main	main'
+        'main   main    main    main'
+        'footer	footer	footer	footer'
+    ;
+}
+
+.header {
+    grid-area: header;
+    background-color: blue;
+    display: grid;
+    gap: 30px;
+    padding: 10px;
+    grid-template-columns: 30%  25% 45% ;
+    grid-template-rows: 100%; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    grid-template-areas:
+        'logo   api     menu'
+}
+
+.item2 {
+    grid-area: main;
+    background-color: red;
+}
+
+.item3 {
+    grid-area: footer;
+    background-color: green;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 50%; /* Reduce the table width */
+    border-collapse: collapse;
+    margin: 20px; /* Add margin to center the table */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px; /* Reduce the padding */
+    font-size: 14px; /* Reduce the font size */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
