@@ -61,16 +61,16 @@ nav ul li a:hover {
 }
 
 table {
-    width: 50%; /* Reduce the table width */
+    width: 50%; 
     border-collapse: collapse;
-    margin: 20px; /* Add margin to center the table */
+    margin: 20px; 
 }
 
 th, td {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 5px; /* Reduce the padding */
-    font-size: 14px; /* Reduce the font size */
+    padding: 5px; 
+    font-size: 14px; 
 }
 
 tr:nth-child(even) {
