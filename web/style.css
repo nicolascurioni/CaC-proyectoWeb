@@ -1,0 +1,141 @@
+.contenedor{
+    display: grid;
+    gap: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    grid-template-rows: 1fr  1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'header	header	header	header'
+        'main	main	main	main'
+        'main	main	main	main'
+        'main   main    main    main'
+        'footer	footer	footer	footer'
+    ;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(54, 121, 210);
+    display: grid;
+    gap: 30px;
+    padding: 10px;
+    grid-template-columns: 30%  25% 45% ;
+    grid-template-rows: 100%; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    grid-template-areas:
+        'logo   api     menu'
+}
+
+.item2 {
+    grid-area: main;
+    background-color: rgb(174, 198, 233);
+}
+
+.item3 {
+    grid-area: footer;
+    background-color: rgb(33, 71, 99);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 50%; /* Reduce the table width */
+    border-collapse: collapse;
+    margin: 20px; /* Add margin to center the table */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px; /* Reduce the padding */
+    font-size: 14px; /* Reduce the font size */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+.contenedor-grid-dest {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    /* grid-template: auto auto auto auto auto / auto auto auto; */
+     border: 2px solid gray;
+     gap: 4px; 
+     row-gap: 40px;   
+     padding: 0px;
+     margin: 20px 100px;
+     
+}
+.contenedor-grid-dest > div {
+border: 2px solid black;
+}
+.contenedor-grid-dest figure {
+    width: 200;
+    margin:auto;
+    }
+.titulo {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.subtitulo {
+    font-size: large;
+    font-weight: 600;
+    font-style: italic;
+}
+.precio-intro {
+font-size: 1vw;
+}
+.precio {
+    font-size: 3vw;
+}
+
+.consulta {
+    text-align: center;
+    font-size: 1.5vw;
+    width: 150px;
+    /* display: grid; 
+    place-items: center; */
+    /* flex-direction: row;  */
+    /* justify-content: center;  */
+    background-color: gray;
+    border-radius: 5px;
+    text-decoration: none;
+    /* position: relative;
+    left: 20%; right: 20%; */
+}
+
+.contenedor-consulta {
+    display: grid; 
+    place-items: center;
+}
+
+a:link {color: white;}
+a:visited {color: white;}
+a:active {color: rgb(183, 178, 178);}

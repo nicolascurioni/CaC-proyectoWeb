@@ -1,26 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinos</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-        <header>
+    <div class="contenedor">
+        <div class="header">
             <div class="header-content">
-                <img src="https://picsum.photos/200" alt="Agencia de viajes">
-                <h2>Destinos</h2>
+                <img src="https://picsum.photos/200" alt="Agencia de viajes" id="logo">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="destinos.html">Destinos</a></li>
-                    <li><a href="feriados.html">Fiestas nacionales</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="faqs.html">Preguntas Frecuentes</a></li>
-                </ul>
-            </nav>
-        </header> 
+
+            <div class="api">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Moneda</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataContainer">
+                    </tbody>
+                </table>
+                <script src="apidolar.js"></script>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="feriados.html">Fiestas nacionales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="faqs.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="item2">Main
+
+            <div class="contenedor-grid-dest">
+                <div>
+                    <!-- <figure> -->
+                        <img src="cataratas.png" alt="cataratas" width="200">
+                    <!-- </figure> -->
+                    
+                </div>
+                <div>
+                    <p class="titulo">Iguazu</p>
+                    <p class="subtitulo"> Escapada Noviembre</p>
+                    <p class="descipcion"> Días/Noches: 4/3 <br> Hotel: El Libertador <br>Sale desde: COR-IGZ</p>
+                </div>
+                <div class="contenedor-consulta">
+                    <p class="precio-intro">Precio final para 2 personas:</p>
+                    <p class="precio">$760.000</p>
+                    <div class="consulta">
+                        <a href="contacto.html">Consultá disponibilidad</a>
+                    </div>
+                    </div>
+                    <div> Foto Mendoza </div>
+                    <div> Desc Mendoza</div>
+                    <div> Precio Mendoza</div>
+                    <div> Foto Bariloche</div>
+                    <div> Desc Bariloche</div>
+                    <div> Precio Bariloche </div>
+                    <div> Foto Tierra del Fuego</div>
+                    <div> Desc Tierra del Fuego</div>
+                    <div> Precio Tierra del Fuego</div>
+                    <div> Foto Calafate</div>
+                    <div> Desc Calafate</div>
+                    <div> Precio Calafate </div>
+                </div>
+            </div>
+
+            <div class="item3">Footer</div>
+        </div>
+        
 </body>
+
 </html>
