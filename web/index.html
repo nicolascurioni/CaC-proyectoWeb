@@ -3,24 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia de Viajes</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Home - Agencia de viajes</title>
+    <link rel="stylesheet" href="newstyle.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="https://picsum.photos/200" alt="Agencia de viajes">
-            <h2>Inicio</h2>
+    <div class="contenedor">
+        <div class="header">
+            <div class="header-content">
+                <img src="https://picsum.photos/200" alt="Agencia de viajes" id="logo">
+            </div>
+            
+            <div class="api">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Moneda</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataContainer">
+                    </tbody>
+                </table>
+                <script src="apidolar.js"></script>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="feriados.html">Fiestas nacionales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="faqs.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="feriados.html">Fiestas nacionales</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="faqs.html">Preguntas Frecuentes</a></li>
-            </ul>
-        </nav>
-    </header>
+
+        <div class="item2">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="/img/bariloche.jpeg" alt="Slide 1">
+                </div>
+                <div class="slide fade">
+                    <img src="/img/cataratas.jpeg" alt="Slide 2">
+                </div>
+                <button class="slideshow-btn next" onclick="plusSlides(1)">&#8250;</button>
+                <button class="slideshow-btn prev" onclick="plusSlides(-1)">&#8249;</button>                
+            </div>
+            <script src="slide.js"></script>
+
+        </div>
+        
+        <div class="item3">Footer</div>
+    </div>
 </body>
 </html>
